@@ -9,6 +9,9 @@
       "recommended": true,
       "style": {
         "useDefaultParameterLast": "off"
+      },
+      "a11y": {
+        "useKeyWithClickEvents": "off"
       }
     }
   },
