@@ -1,7 +1,10 @@
-import { memo } from "react";
+import { memo } from 'react';
+import { useSelector } from 'react-redux';
 
 const Detail = memo(() => {
-  return <div className="detail">Detail</div>;
+	const { detailInfo } = useSelector((state) => state.detail);
+
+	return <div className="detail">Detail</div>;
 });
 
 export default Detail;
