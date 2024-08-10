@@ -6,5 +6,8 @@
   },
   "editor.codeActionsOnSave": {
     "quickfix.biome": "explicit"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
   }
 }

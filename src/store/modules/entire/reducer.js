@@ -1,5 +1,7 @@
 const initialStete = {
-	page: 1,
+	currentPage: 0,
+	roomList: [],
+	totalCount: 0,
 };
 
 const entireReducer = (state = initialStete, action) => {
