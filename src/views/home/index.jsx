@@ -13,6 +13,7 @@ import {
 	changeLongForInfo,
 	changePlusInfo,
 } from '@/store/modules/home';
+import { changeHeaderConfigAction } from '@/store/modules/main';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
 
 const Home = memo(() => {
@@ -27,6 +28,7 @@ const Home = memo(() => {
 
 	const dispatch = useDispatch();
 	useEffect(() => {
+		dispatch(changeHeaderConfigAction({ isFixed: true, topAlpha: true }));
 		dispatch(changeGoodPriceInfo());
 		dispatch(changeHighScoreInfo());
 		dispatch(changeDiscountInfo());

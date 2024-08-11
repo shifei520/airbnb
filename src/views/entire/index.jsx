@@ -5,10 +5,12 @@ import EntireRooms from './components/entire-rooms';
 import EntirePagination from './components/entire-pagination';
 import { fetchRoomListAction } from '@/store/modules/entire/createActions';
 import { useDispatch } from 'react-redux';
+import { changeHeaderConfigAction } from '@/store/modules/main';
 
 const Entire = memo(() => {
 	const dispatch = useDispatch();
 	useEffect(() => {
+		dispatch(changeHeaderConfigAction({ isFixed: true, topAlpha: false }));
 		dispatch(fetchRoomListAction());
 	}, [dispatch]);
 

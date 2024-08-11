@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
 export const FilterWrapper = styled.div`
+  position: fixed;
+  top: 80px;
+  z-index: 9;
   display: flex;
   align-items: center;
   height: 48px;
+  width: 100%;
   padding-left: 16px;
   border-bottom: 1px solid #f2f2f2;
   background-color: #fff;

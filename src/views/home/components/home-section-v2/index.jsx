@@ -11,7 +11,6 @@ const HomeSectionV2 = memo((props) => {
 	const tabNames = infoData?.dest_address?.map((item) => item.name);
 
 	const [name, setName] = useState('');
-	console.log('ssss');
 	const tabClickHandle = useCallback((index, name) => {
 		setName(name);
 	}, []);
